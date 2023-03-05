@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/538bb24ac7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" alt="" class="logo" />
+          <ul id="Side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="dumb fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="dumb fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Web Developer</p>
+          <h1>Hi,I'm <span>Abhinav</span><br />Kumar From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------------------- about ---------------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="Subtitle">About Me</h1>
+            <p>
+              I am a Third year Student pursuing Computer science engineering @ Manipal University Jaipur campus. I am always ready to have new experiences, meet new people and learn new things.
+              I enjoy building web apps and have learned MERN stack web development.
+              Besides being passionate about coding, I also love to play Chess.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>
+                  Problem Solving</span><br />Solving Real Life Problems through Coding</li>
+                <li><span>Front End Development</span><br />Designing Web interfaces</li>
+                <li>
+                  <span>Back End Development</span><br />Building APIs and working with databases
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>Development</span><br />Designing App interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Manipal University Jaipur</span><br />Bachelor of Technology - BTech</li>
+                <li><span> DAV Public School , Bistupur</span><br />Higher Secondary</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <-------------------------------------------Services-------------------------------------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="Subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              quos ratione ipsam, earum cumque ipsum aperiam nemo iure laborum,
+              eveniet cupiditate alias autem sunt distinctio nam. Sequi iusto at
+              laborum?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>UI/UX design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              quos ratione ipsam, earum cumque ipsum aperiam nemo iure laborum,
+              eveniet cupiditate alias autem sunt distinctio nam. Sequi iusto at
+              laborum?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-retro"></i>
+            <h2>App design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              quos ratione ipsam, earum cumque ipsum aperiam nemo iure laborum,
+              eveniet cupiditate alias autem sunt distinctio nam. Sequi iusto at
+              laborum?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <--------------------------------------portfolio---------------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <div class="Subtitle">My Work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work_1.jpg" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The appp connnects you to people you like or if u wanted to meet
+                new people Lorem ipsum dolor sit amet consectetur
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work_2.jpg" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The appp connnects you to people you like or if u wanted to meet
+                new people Lorem ipsum dolor sit amet consectetur a
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work_3.jpg" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The appp connnects you to people you like or if u wanted to meet
+                new people Lorem ipsum dolor sit amet consectet
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- <------------------------------------------contact------------------------------------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>abhinavkumar170902@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>6204488012</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://accounts.snapchat.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/rough.pdf.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"> 2022 by Abhinav</i></p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("Side-menu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
