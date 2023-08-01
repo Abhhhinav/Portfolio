@@ -284,7 +284,7 @@ nav ul li a:hover::after {
 .btn {
     display: block;
     margin: 50px auto;
-    /* width:-moz-fit-content; */
+    display: table;
     border: 1px solid aqua;
     padding: 14px 50px;
     border-radius: 6px;
